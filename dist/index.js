@@ -31857,12 +31857,14 @@ async function run() {
     let commentBody = '';
 
     if (durationMs < timeLimitMs && reviewers.length > 0) {
-      const mentions = reviewers.map(user => `@${user.login}`).join(', ');
+      const mentions = reviewers.map(user => `@${user.login}`).join('\n');
 
       commentBody = `
 ⚠️ Este PR foi mergeado em menos de ${timeLimitHours}h.
-Reviewers ainda pendentes: ${mentions}
-> Por favor, desatribua-se manualmente se for o caso.
+Reviewers ainda pendentes:
+${mentions}
+
+Por favor, desatribua-se manualmente se for o caso.
       `.trim();
     }
 
