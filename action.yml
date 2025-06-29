@@ -1,0 +1,17 @@
+name: 'PR Merge Timer'
+description: 'Calcula o tempo entre a criação e o merge de um PR e toma decisões baseadas nisso'
+author: 'Thierry Castro'
+inputs:
+  GITHUB_TOKEN:
+    description: 'Token de acesso do GitHub'
+    required: true
+  tempo_limite_horas:
+    description: 'Tempo limite entre a criação e o merge do PR (padrão: 24 horas)'
+    required: false
+    default: '24'
+runs:
+  using: 'node16'
+  main: 'index.js'
+branding:
+  icon: 'clock'
+  color: 'purple'
