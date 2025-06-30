@@ -41,3 +41,10 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           tempo_limite_horas: 24
 ```
+
+## 🤖 Exemplo de resultado
+
+
+
+![image](https://github.com/user-attachments/assets/40352a04-ab7f-43c9-9028-2882b4d45d67)
+![image](https://github.com/user-attachments/assets/4657844c-73b5-4042-866f-d3f141bff54e)
